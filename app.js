@@ -7,14 +7,20 @@ alert('I\'m going to ask you a few questions and I would appreciate answers in Y
 
 var originCity = prompt('Was I born in Seattle?');
 var originCap = originCity.toUpperCase();
-if (originCap = 'Y') {
+if (originCap === 'Y') {
   alert('Correct! I was born in Seattle.');
   console.log('The user guessed yes.');
 }
-else if (originCap = 'N') {
+else if (originCap === 'N') {
   alert('Incorrect!');
   console.log('The user guessed no.');
 } else {
   alert('Please answer with a Y or N.');
   console.log('The user entered an invalid answer.');
+}
+
+var likeCoffee = prompt('Am I a coffee drinker?');
+if (likeCoffee = 'Y') {
+  alert('Hell yeah, I love my coffee!');
+  console.log('The user guessed yes.');
 }
